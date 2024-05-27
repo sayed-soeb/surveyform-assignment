@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not Convenient In Answering A Particular Question Please Skip It By Answering "No". Every Answer Would Be Very Appreciated. Thank You For Your Time.</p>
+        <form action="#">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="user@user.com">
+
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="9999999999">
+
+            <label for="location">Where Do You Live?</label>
+            <select id="location" name="location">
+                <option value="" disabled selected>Select</option>
+                <!-- Add options as needed -->
+            </select>
+
+            <label for="age">Age</label>
+            <div class="radio-group">
+                <input type="radio" id="age1" name="age" value="15-20">
+                <label for="age1">15-20</label>
+                <input type="radio" id="age2" name="age" value="21-30">
+                <label for="age2">21-30</label>
+                <input type="radio" id="age3" name="age" value="31-40">
+                <label for="age3">31-40</label>
+                <input type="radio" id="age4" name="age" value="41-50">
+                <label for="age4">41-50</label>
+                <input type="radio" id="age5" name="age" value="prefer_not_to_say">
+                <label for="age5">Prefer not to say</label>
+            </div>
+
+            <label for="proficiency">How would you rate your proficiency in coding</label>
+            <div class="radio-group">
+                <input type="radio" id="beginner" name="proficiency" value="beginner">
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="intermediate" name="proficiency" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" id="advance" name="proficiency" value="advance">
+                <label for="advance">Advance</label>
+            </div>
+
+            <label>Have You Ever Appeared in any coding contest?</label>
+            <div class="radio-group">
+                <input type="radio" id="contest_yes" name="contest" value="yes">
+                <label for="contest_yes">Yes</label>
+                <input type="radio" id="contest_no" name="contest" value="no">
+                <label for="contest_no">No</label>
+            </div>
+
+            <label for="passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+            <textarea id="passion" name="passion"></textarea>
+
+            <label for="challenges">What are some of the challenges you face while coding?</label>
+            <textarea id="challenges" name="challenges"></textarea>
+
+            <label for="data-structures">Please list the Data Structures you have a strong understanding of.</label>
+            <textarea id="data-structures" name="data-structures"></textarea>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
